@@ -37,10 +37,6 @@ body {
     padding: 0;
 
     background: linear-gradient(45deg, #272727, #000000, #0a9aad);
-
-    /* background: linear-gradient(45deg, #1a1a1a, #18042b, #1a1a1a); */
-
-
     background-size: 300% 300%;
     animation: gradient 4s ease-in infinite;
 }
