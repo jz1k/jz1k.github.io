@@ -1,8 +1,7 @@
 const canvas = document.getElementById('particles');
 const ctx = canvas.getContext('2d');
 
-var freq = 1;
-const opacity = 0.5 + (freq / 3) * 0.5;
+const opacity = 0.5;
 
 let mouseMoved = false;
 
@@ -91,7 +90,7 @@ function update(t) {
         const xc = 0.5 * (trail[i].x + trail[i + 1].x);
         const yc = 0.5 * (trail[i].y + trail[i + 1].y);
         ctx.quadraticCurveTo(trail[i].x, trail[i].y, xc, yc);
-        ctx.lineWidth = params.widthFactor * 70 * freq; // Ajusta el valor para hacer el rastro más grande
+        ctx.lineWidth = params.widthFactor * 100; // Ajusta el valor para hacer el rastro más grande
     }
 
     ctx.lineTo(trail[trail.length - 1].x, trail[trail.length - 1].y);

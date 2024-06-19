@@ -50,4 +50,23 @@ document.addEventListener('DOMContentLoaded', function() {
             });
         });
     });
+
+    // Hover effect on skills-icons
+    const skills = document.querySelectorAll('.skills-icons img');
+
+    skills.forEach(skill => {
+        skill.addEventListener('mouseenter', () => {
+            skills.forEach(s => {
+                if (s !== skill) {
+                    s.style.opacity = '0.5';
+                }
+            });
+        });
+
+        skill.addEventListener('mouseleave', () => {
+            skills.forEach(s => {
+                s.style.opacity = '1';
+            });
+        });
+    });
 });
