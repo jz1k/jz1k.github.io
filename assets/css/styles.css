@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+:root {
+    --main-color: #0a0a0a;
+    --secondary-color: #202020;
+    --accent-color: #0a9aad;
+    --text-color: #f4f4f4;
+    --text-light-color: #d4d4d4;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Outfit', sans-serif;
+    background-color: var(--main-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: rgba(0, 0, 0, 0.137);
+    color: var(--text-color);
+    padding: 10px 0;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.671);
+    /* Filtro blur */
+    backdrop-filter: blur(50px);
+
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 20vh;
+    z-index: 1000;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: var(--text-color);
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: var(--accent-color);
+}
+
+.container {
+    width: 80%;
+    padding: 2vh;
+}
+
+#particles {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    filter: blur(200px);
+    /* Ajusta el valor de blur según tu preferencia */
+}
+
+#about {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    margin-top: 20vh;
+}
+
+#hero {
+    padding: 100px;
+    text-align: center;
+    color: var(--text-light-color);
+}
+
+#hero h2 {
+    margin-bottom: 10px;
+    font-size: 36px;
+    animation: fadeInDown 2s;
+}
+
+#hero p {
+    font-size: 18px;
+    animation: fadeInUp 2s;
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+section {
+    margin-top: 15vh;
+}
+
+h2 {
+    color: var(--text-color);
+    margin-bottom: 20px;
+    font-size: 28px;
+    text-align: center;
+}
+
+.name {
+    color: var(--accent-color);
+    font-weight: bold;
+}
+
+.project {
+    background-color: var(--main-color);
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s, opacity 0.3s;
+}
+
+.project h3 {
+    margin-top: 0;
+    color: var(--accent-color);
+}
+
+.project p {
+    color: var(--text-light-color);
+}
+
+.project a {
+    display: inline-block;
+    margin-top: 10px;
+    color: var(--main-color);
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+    background-color: var(--accent-color);
+    padding: 5px 10px;
+    border-radius: 5px 5px 5px 0;
+}
+
+.project a:hover {
+    color: var(--accent-color);
+    background-color: var(--text-color);
+
+}
+
+.project:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 30px var(--accent-color);
+}
+
+.project:not(:hover) {
+    transition: transform 0.3s, opacity 0.3s;
+}
+
+.skills-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.skills-icons img {
+    height: 50px;
+    margin: 10px;
+}
+
+footer {
+    background-color: var(--main-color);
+    color: var(--text-light-color);
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+}
+
+#contact {
+    background-color: rgba(0, 0, 0, 0.137);
+    box-shadow: 10px 0 0 rgba(0, 0, 0, 0.671);
+    color: var(--text-light-color);
+    padding: 20px;
+    text-align: center;
+}
+
+#contact ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+#contact ul li {
+    margin: 10px 0;
+}
+
+#contact ul li a {
+    color: var(--accent-color);
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+#contact ul li a:hover {
+    color: var(--text-color);
+}
