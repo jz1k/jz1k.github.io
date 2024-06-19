@@ -24,7 +24,7 @@ body {
 
 header{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
 
     background-color: rgba(0, 0, 0, 0.137);
@@ -42,10 +42,6 @@ header{
     z-index: 1000;
 }
 
-header h1 {
-    margin: 0;
-    font-size: 24px;
-}
 
 
 nav ul {
@@ -71,7 +67,6 @@ nav ul li a:hover {
 
 .container {
     width: 80%;
-    padding: 2vh;
 }
 
 #particles {
@@ -130,8 +125,12 @@ nav ul li a:hover {
     }
 }
 
-section {
+section:first-of-type {
     margin-top: 15vh;
+}
+
+section {
+    padding: 5vh 0;
 }
 
 h2 {
@@ -147,8 +146,8 @@ h2 {
 
 .project {
     background-color: var(--main-color);
-    padding: 20px;
-    margin: 20px 0;
+    padding: 3vh;
+    margin: 3vh 0;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s, box-shadow 0.3s, opacity 0.3s;
