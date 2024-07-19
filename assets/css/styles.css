@@ -103,8 +103,9 @@ body {
 }
 
 .logo {
-    width: 200px; /* Ajusta el tamaño del logo según tus necesidades */
+    width: 250px; /* Ajusta el tamaño del logo según tus necesidades */
     margin-bottom: -10px; /* Ajusta el margen inferior para espaciar el logo y el contador */
+    margin-top: -100px;
 }
 
 .social-icons a {
@@ -127,6 +128,7 @@ body {
 
 #countdown {
     font-size: 3rem;
+
     display: flex;
     justify-content: center;
     gap: 0.5rem; /* Ajusta el espacio entre los bloques */
@@ -141,4 +143,123 @@ body {
 .fecha{
 
     color: var(--text-light-color);
+}
+
+
+@keyframes glitch {
+    0% {
+        clip: rect(42px, 9999px, 44px, 0);
+        transform: skew(0.08deg);
+    }
+    5% {
+        clip: rect(36px, 9999px, 86px, 0);
+        transform: skew(0.08deg);
+    }
+    10% {
+        clip: rect(16px, 9999px, 79px, 0);
+        transform: skew(0.08deg);
+    }
+    15% {
+        clip: rect(42px, 9999px, 44px, 0);
+        transform: skew(0.08deg);
+    }
+    20% {
+        clip: rect(36px, 9999px, 86px, 0);
+        transform: skew(0.08deg);
+    }
+    25% {
+        clip: rect(42px, 9999px, 44px, 0);
+        transform: skew(0.08deg);
+    }
+    30% {
+        clip: rect(16px, 9999px, 79px, 0);
+        transform: skew(0.08deg);
+    }
+    35% {
+        clip: rect(36px, 9999px, 86px, 0);
+        transform: skew(0.08deg);
+    }
+    40% {
+        clip: rect(42px, 9999px, 44px, 0);
+        transform: skew(0.08deg);
+    }
+    45% {
+        clip: rect(16px, 9999px, 79px, 0);
+        transform: skew(0.08deg);
+    }
+    50% {
+        clip: rect(36px, 9999px, 86px, 0);
+        transform: skew(0.08deg);
+    }
+    55% {
+        clip: rect(42px, 9999px, 44px, 0);
+        transform: skew(0.08deg);
+    }
+    60% {
+        clip: rect(16px, 9999px, 79px, 0);
+        transform: skew(0.08deg);
+    }
+    65% {
+        clip: rect(36px, 9999px, 86px, 0);
+        transform: skew(0.08deg);
+    }
+    70% {
+        clip: rect(42px, 9999px, 44px, 0);
+        transform: skew(0.08deg);
+    }
+    75% {
+        clip: rect(16px, 9999px, 79px, 0);
+        transform: skew(0.08deg);
+    }
+    80% {
+        clip: rect(36px, 9999px, 86px, 0);
+        transform: skew(0.08deg);
+    }
+    85% {
+        clip: rect(42px, 9999px, 44px, 0);
+        transform: skew(0.08deg);
+    }
+    90% {
+        clip: rect(16px, 9999px, 79px, 0);
+        transform: skew(0.08deg);
+    }
+    95% {
+        clip: rect(36px, 9999px, 86px, 0);
+        transform: skew(0.08deg);
+    }
+    100% {
+        clip: rect(42px, 9999px, 44px, 0);
+        transform: skew(0.08deg);
+    }
+}
+
+#countdown span {
+    display: inline-block;
+    width: 4rem;
+    text-align: center;
+    position: relative;
+}
+
+#countdown span:before,
+#countdown span:after {
+    content: attr(data-text);
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+#countdown span:before {
+    left: 2px;
+    text-shadow: -2px 0 red;
+    animation: glitch 1s infinite;
+    clip: rect(0, 900px, 0, 0);
+}
+
+#countdown span:after {
+    left: -2px;
+    text-shadow: -2px 0 blue;
+    animation: glitch 2s infinite;
+    clip: rect(0, 900px, 0, 0);
 }

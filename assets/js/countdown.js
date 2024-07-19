@@ -15,10 +15,10 @@ var countdownFunction = setInterval(function() {
     seconds = String(seconds).padStart(2, '0');
 
     document.getElementById("countdown").innerHTML = `
-        <span>${days}</span> : 
-        <span>${hours}</span> : 
-        <span>${minutes}</span> : 
-        <span>${seconds}</span>
+        <span data-text="${days}">${days}</span> : 
+        <span data-text="${hours}">${hours}</span> : 
+        <span data-text="${minutes}">${minutes}</span> : 
+        <span data-text="${seconds}">${seconds}</span>
     `;
 
     if (distance < 0) {
