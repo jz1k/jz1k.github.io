@@ -103,25 +103,25 @@ body {
 }
 
 .logo {
-    width: 150px; /* Ajusta el tamaño del logo según tus necesidades */
-    margin-bottom: 20px; /* Ajusta el margen inferior para espaciar el logo y el contador */
+    width: 200px; /* Ajusta el tamaño del logo según tus necesidades */
+    margin-bottom: -10px; /* Ajusta el margen inferior para espaciar el logo y el contador */
 }
 
 .social-icons a {
     margin: 0 10px;
     font-size: 24px;
+    text-decoration: none;
+    color: var(--text-light-color);
 }
 
 .dynamic-container {
     font-size: 1.5rem;
     margin-bottom: 20px;
-    color: var(--text-light-color);
 }
 
 #dynamic-text {
     font-size: 1.5rem;
     margin-bottom: 20px;
-    color: var(--text-light-color);
     display: inline;
 }
 
@@ -136,4 +136,9 @@ body {
     display: inline-block;
     width: 4rem; /* Ajusta este valor para que todos los números ocupen el mismo ancho */
     text-align: center;
+}
+
+.fecha{
+
+    color: var(--text-light-color);
 }
