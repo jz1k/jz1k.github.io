@@ -17,28 +17,35 @@
 
 <body>
     <!-- Cuenta atrás para el 3 de agosto a las 22:00 -->
-    <div class="content">
-        <h1>Cuenta atrás para el evento</h1>
+    <div class="contenido">
+        <div class="logo">
+            <img src="assets/img/jzik.png" alt="JZIK Logo" class="logo">
+        </div>
+
+        <div class="dynamic-container">
+            <p id="dynamic-text"></p>
+        </div>
+
         <div id="countdown"></div>
     </div>
 
     <!-- Video de fondo-->
-    <video autoplay muted loop class="bg-video">
+    <!-- <video autoplay muted loop class="bg-video">
         <source src="assets/videos/promo.mp4" type="video/mp4">
         Your browser does not support HTML5 video.
-    </video>
+    </video> -->
 
-    
+
 
     <!-- Footer con logo de insta, twitter, soundcloud, spotify-->
     <footer class="fixed-bottom text-center social-icons">
         <a href="https://instagram.com" target="_blank"><i class="bi bi-instagram"></i></a>
         <a href="https://twitter.com" target="_blank"><i class="bi bi-twitter"></i></a>
-        <a href="https://soundcloud.com" target="_blank"><i class="bi bi-soundcloud"></i></a>
         <a href="https://spotify.com" target="_blank"><i class="bi bi-spotify"></i></a>
     </footer>
 
     <!-- Scripts de js -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script src="assets/js/main.js"></script>
     <script src="assets/js/countdown.js"></script>
 
@@ -52,7 +59,8 @@
         crossorigin="anonymous"></script>
 
     <!-- Icons from Bootstrap Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.2/font/bootstrap-icons.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.2/font/bootstrap-icons.min.css">
 </body>
 
 </html>

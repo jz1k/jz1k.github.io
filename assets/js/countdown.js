@@ -1,4 +1,3 @@
-// Cuenta atrás
 var countDownDate = new Date("Aug 3, 2024 22:00:00").getTime();
 
 var countdownFunction = setInterval(function() {
@@ -10,8 +9,17 @@ var countdownFunction = setInterval(function() {
     var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
     var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-    document.getElementById("countdown").innerHTML = days + " : " + hours + " : "
-        + minutes + " : " + seconds;
+    days = String(days).padStart(2, '0');
+    hours = String(hours).padStart(2, '0');
+    minutes = String(minutes).padStart(2, '0');
+    seconds = String(seconds).padStart(2, '0');
+
+    document.getElementById("countdown").innerHTML = `
+        <span>${days}</span> : 
+        <span>${hours}</span> : 
+        <span>${minutes}</span> : 
+        <span>${seconds}</span>
+    `;
 
     if (distance < 0) {
         clearInterval(countdownFunction);
