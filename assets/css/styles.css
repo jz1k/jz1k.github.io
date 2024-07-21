@@ -41,6 +41,9 @@ body {
     background: linear-gradient(45deg, #0a0a0a, #0c0c0c, #420101);
     background-size: 300% 300%;
     animation: gradient 4s ease infinite;
+
+    
+
 }
 
 @keyframes gradient {
@@ -85,12 +88,19 @@ body {
 
 .bg-video {
     position: fixed;
-    right: 0;
-    bottom: 0;
+    top: 50%;
+    left: 50%;
     min-width: 100%;
     min-height: 100%;
-    z-index: -1;
+    width: auto;
+    height: auto;
+    transform: translate(-50%, -50%);
+    z-index: -9999;
+    overflow: hidden;
+    object-fit: cover;
+    opacity: 0.4;
 }
+
 
 .contenido {
     display: flex;
@@ -100,6 +110,8 @@ body {
     text-align: center;
     height: 100vh;
     width: 100vw;
+
+    text-shadow: 1px 1px 10px rgba(0, 0, 0, 1); /* Añade sombra al texto */
 }
 
 .logo {
